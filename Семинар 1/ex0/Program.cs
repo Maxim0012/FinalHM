@@ -28,3 +28,24 @@ string userInput = Console.ReadLine() ?? "";
 int userNumber = int.Parse(userInput);
 if()
 */
+
+
+//Домашка
+
+Console.Clear();
+Console.Write("Введите целое число 1: ");
+string userInput = Console.ReadLine() ?? "";
+int userNumber = int.Parse(userInput);
+Console.Write("Введите целое число 2: ");
+string userInput1 = Console.ReadLine() ?? "";
+int userNumber1 = int.Parse(userInput1);
+if (userNumber > userNumber1)
+{
+    Console.WriteLine(userNumber);
+    ;
+}
+
+else
+{
+    Console.WriteLine(userNumber1);
+}
