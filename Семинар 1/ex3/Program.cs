@@ -130,3 +130,57 @@ int GetNumberFromUser(string message, string errorMessage)
     }
 }
 */
+
+//Задача 25
+//Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+/*
+Console.WriteLine("введите число A");
+int a = int.Parse(Console.ReadLine() ?? "");
+Console.WriteLine("введите число B");
+int b = int.Parse(Console.ReadLine() ?? "");
+int size = a;
+
+for (int i = 1; i < b; i++)
+{
+    size = size * a;
+}
+Console.WriteLine($"{a} в степени {b} = {size}");
+*/
+
+//Задача 27
+//Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+/*
+Console.Write("Введите число: ");
+int a = int.Parse(Console.ReadLine() ?? "");
+int sum = 0;
+
+while (a > 0)
+{
+    int num = a % 10;
+    a = a / 10;
+    sum = sum + num;
+}
+Console.WriteLine($"сумма всех цифр в числе равна:  {sum}");
+*/
+
+//Задача№29
+//Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+/*
+Console.Write("Введите минимальное число массива: ");
+int min = int.Parse(Console.ReadLine() ?? "");
+Console.Write("Введите максимальное число массива: ");
+int max = int.Parse(Console.ReadLine() ?? "");
+Console.Write("Введите размер массива: ");
+int size = int.Parse(Console.ReadLine() ?? "");
+
+Console.Write("[");
+int count = 1;
+while (count < size)
+{
+    count++;
+    Console.Write(new Random().Next(min, max));
+    Console.Write(", ");
+}
+Console.Write(new Random().Next(min, max));
+Console.WriteLine("]");
+*/
